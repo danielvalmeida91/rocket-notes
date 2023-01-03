@@ -7,11 +7,14 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { Container, Form, Background } from './styles.js'
 import { api } from '../../services/api'
+import { useEffect } from 'react'
 
 export function SignUp(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  
+  useEffect(()=>{}, [])
 
   const navigate = useNavigate()
 
